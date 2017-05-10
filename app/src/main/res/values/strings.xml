@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sqlite functions App</string>
+    <string name="gender_male">MALE</string>
+    <string name="gender_female">FEMALE</string>
+    <string name="gender_unknown">UNKNOWN</string>
+    <string name="empty_view_title_text">No User Added Yet</string>
+
+</resources>
+

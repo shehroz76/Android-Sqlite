@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Your Name"
+            android:id="@+id/Name"
+            />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Your Age"
+            android:id="@+id/Age"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Your Email"
+            android:id="@+id/Email"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_marginTop="5dp"></Spinner>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/Image"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:src="@drawable/profile_placeholder"
+                android:padding="5dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Upload"
+                android:id="@+id/Upload"
+                android:textColor="#FFFAFAFC"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textColor="#FFFAFAFC"
+            android:id="@+id/submit"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
